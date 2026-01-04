@@ -12,7 +12,7 @@ function Navbar() {
           transition={{ duration: 0.8 }}
         ></motion.nav>
 
-      <Link to="/">Home</Link>
+      <Link to="/React-portfolio">Home</Link>
       <Link to="/Projects">Projects</Link>
       <Link to="/about">About</Link>
       <Link to="/Certificates">Certificates</Link>
