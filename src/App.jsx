@@ -11,11 +11,17 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/React-portfolio" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/certificates" element={<Certificates />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* HOME */}
+        <Route index element={<Home />} />
+
+        {/* OTHER PAGES */}
+        <Route path="projects" element={<Projects />} />
+        <Route path="certificates" element={<Certificates />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+
+        {/* FALLBACK */}
+        <Route path="*" element={<Home />} />
       </Routes>
     </>
   );
