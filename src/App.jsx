@@ -11,17 +11,11 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        {/* HOME */}
         <Route index element={<Home />} />
-
-        {/* OTHER PAGES */}
         <Route path="projects" element={<Projects />} />
         <Route path="certificates" element={<Certificates />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
-
-        {/* FALLBACK */}
-        <Route path="*" element={<Home />} />
       </Routes>
     </>
   );

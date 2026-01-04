@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 
-// basename only for GitHub Pages
 const basename =
   import.meta.env.MODE === "production" ? "/React-portfolio" : "/";
 
